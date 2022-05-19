@@ -1,6 +1,8 @@
 # **GhostBuds** (GB) is a private platform for organizing paranormal investigations
 (*GhostBuds is a working title*)
 
+![Image](ghostPic.jpg)
+
 This platform will utilize technology on the MERN stack in order to:
 * Store a database of locations across the USA for paranormal investigations
 
@@ -17,7 +19,7 @@ This platform will utilize technology on the MERN stack in order to:
 * Give members the opportunity to build team profiles and individual profiles, but not necessarily for social media (unless they want to)
 
 
-My goals with this platform are: 
+**My goals with this platform are:** 
 
 * To give people outside the realm of paranormal studies a safe way in to experiencing the strange and unexplainable 
 
