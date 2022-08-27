@@ -1,0 +1,114 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  background-color: black;
+  }
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  width: 100%;
+}
+
+body h1 {
+  width: 33%;
+  margin: 10% auto; 
+  color: red;
+  outline: 2px solid white;
+
+}
+
+
+
+.team-board-container h2 {
+  width: 100%; 
+  color: red;
+  text-align: center;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+nav ul {
+  width: 37%;
+  overflow: hidden;
+  margin: 5% auto;
+  padding: 0;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  background-color: red;
+  text-decoration: none;
+}
+
+nav li {
+  list-style: none;
+  padding: 0px 6%;
+  text-align: center;
+  background-color: red;
+}
+
+.team-board-container {
+  width: 80%;
+  margin: 10% auto;
+  outline: 3px solid red;
+
+}
+
+.team-board-info {
+  display: flex;
+
+}
+
+
+.team-board-info img {
+  outline: 2px solid white;
+  width: 250px;
+  height: 300px;
+  margin: 5%;
+}
+
+.team-board-info ul {
+  margin: 5%;
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+nav a:hover {
+  color: black;
+}
+
+
+.team-board-info p {
+  color: red;
+}
