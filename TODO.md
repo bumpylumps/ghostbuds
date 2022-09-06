@@ -1,11 +1,17 @@
 # TODO
 
+## Hours Logged: 4hrs
+
 * Build every page
     - home
     - about
     - scheduler
     - team data
     - locations
+    - x addlocation
+        - hook up form and buttons
+        - style form
+        - 
     - login
 
 * Build locations DB
@@ -16,13 +22,15 @@
 
 * host app
 
-* style pages
+* style pages:
+    - addLocation
+        - figure out form styling
 
 * build by MVC standards
 
 * add user auth
 
-* build Schema for locations
+*  x - build Schema for locations
 
 * schema for user accounts
 
@@ -30,7 +38,7 @@
 
 * schema for investigation data
 
-* add routes 
+* x - add routes 
 
 * add voting module 
 

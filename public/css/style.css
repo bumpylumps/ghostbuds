@@ -2,6 +2,7 @@
 * {
   box-sizing: border-box;
   background-color: black;
+  color: white;
   }
 
 /* Clear fix hack */
@@ -77,12 +78,10 @@ nav li {
   width: 80%;
   margin: 10% auto;
   outline: 3px solid red;
-
 }
 
 .team-board-info {
   display: flex;
-
 }
 
 
@@ -97,6 +96,64 @@ nav li {
   margin: 5%;
 }
 
+
+/*add a location page*/
+
+.location-header-container h2 {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 55px;
+}
+
+
+
+.location-form-container {
+  width: 65%;
+  margin: 5% auto;
+  outline: 3px solid red;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.location-form-interior {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 320px;
+  padding: 0 2%;
+}
+
+.location-form-interior div{
+  margin: 1% auto;
+}
+
+.location-form-container img {
+  width: 80%;
+  height: 275px;
+  margin: 5%;
+}
+
+#location-image-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#location-image-submit-button {
+  width: 30%;
+  background-color: red;
+  color: black;
+  margin: 2% 25%;
+}
+
+#location-submit-button {
+  width: 20%;
+  background-color: red;
+  color: black;
+  margin: 2% auto;
+}
+
 footer {
 
 }
@@ -108,6 +165,9 @@ nav a:hover {
   color: black;
 }
 
+.button:hover {
+  cursor: pointer;
+}
 
 .team-board-info p {
   color: red;
