@@ -1,6 +1,6 @@
 # TODO
 
-## Hours Logged: 4hrs
+## Hours Logged: 8hrs
 
 * Build every page
     - home
@@ -9,7 +9,7 @@
     - team data
     - locations
     - x addlocation
-        - hook up form and buttons
+        - x hook up form and buttons
         - style form
         - 
     - login
@@ -42,3 +42,4 @@
 
 * add voting module 
 
+* multer for image uploads on locations/ CDN (cloudinary)

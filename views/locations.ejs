@@ -30,7 +30,14 @@
 
 		<section class="locations-list-container">
 			<h2>Locations List</h2>
-			<a href="/addLocation">Add a Location</a>
+			<ul class="locations-list">
+				<% data.forEach(location => { %>
+					<li>
+							<%= location.name %>
+					</li>
+				<% }) %>
+			</ul>
+			<a href="locations/addLocation">Add a Location</a>
 		</section>
 
 		<script type="text/javascript" src="js/main.js"></script>

@@ -2,20 +2,35 @@
 const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
+const connectDB = require("./config/database");
 const mainRoutes = require('./routes/main')
+const locationsRoutes = require('./routes/locations')
 const PORT = 8300
 
-//import .env
+//Use .env file in config folder
 require('dotenv').config({path: './config/.env'})
 
-//set views and public
+
+//Connect to Database
+connectDB();
+
+
+
+//Using EJS for views
 app.set('view engine', 'ejs')
+
+
+//Static Folder
 app.use(express.static('public'))
+
+//Body Parsing
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
-//set index GET
+//setup listening routes
 app.use('/', mainRoutes)
+app.use('/locations', locationsRoutes)
+
 
 
 //set listener

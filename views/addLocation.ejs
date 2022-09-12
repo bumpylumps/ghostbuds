@@ -12,8 +12,8 @@
 		
 
 		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="../css/normalize.css">
+		<link rel="stylesheet" href="../css/style.css">
 	</head>
 	<body>
 
@@ -31,9 +31,9 @@
             <h2>ADD YOUR OWN LOCATION</h2>
         </section>
         
-        <form id="location-form" action="/locations/createLocation" method="POST" class="location-form-container">
+        <form action="/locations/newLocation" id="location-form"  method="POST" class="location-form-container">
             <div id="location-image-container">
-                <img src="location.jpg">
+                <img src="../location.jpg">
                 <input id="location-image-submit-button" class="button" type="button" value="Add a Picture">
             </div>
 
@@ -48,7 +48,7 @@
         </div>
         <div>
             <label for="townOrCity">Town/City:</label>
-            <input class="input-field" type="text" placeholder="City" id="town-city" name='town-city'>
+            <input class="input-field" type="text" placeholder="City" id="townOrCity" name='townOrCity'>
         </div>
         <div>
             <label for="state">State:</label>
@@ -68,11 +68,8 @@
         </div>
         <div>
             <label for="story">Story:</label>
-            <input class="input-field" type="text" placeholder="Story" id="story" name='story'>
-        </div>
-        <div>
-            <label for="pictureURL">Picture of Location:</label>
-            <input class="input-field" type="text" placeholder="Picture Url" id="pictureUrl" name='pictureUrl'>
+            <textarea rows="6" cols="45"
+            id="story" name='story'></textarea>
         </div>
         <div>
             <label for="source">Source:</label>
@@ -81,9 +78,9 @@
         <div>
             <label for="scales">This location is private:</label>
             <input type="checkbox" id="private" name="private"
-                   checked>
+                   unchecked>
           </div>
-            <input id="location-submit-button" type="button" class="button" value="Submit">
+            <input id="location-submit-button" type="submit" class="button" value="Submit">
         </section>
         </form>
 
