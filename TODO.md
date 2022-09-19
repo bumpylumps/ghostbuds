@@ -4,23 +4,44 @@
 
 * Build every page
     - home
-    - about
+    - about:
+        - edit copy, add how to, what is, etc...
     - scheduler
+        - build calendar module
+        - create investigation schema:
+            - location - voting module
+            - time/date - voting module
+            - Investigation Leader
     - team data
     - locations
-    - x addlocation
-        - x hook up form and buttons
-        - style form
-        - 
+        - voting module (button)
+        - x addlocation
+            - x hook up form and buttons
+            - style form
+        - list display
+            - Location name
+            - Picture
+            - Phenomena
+            - add click with id for specific location page (use leon's buB pattern for feed posts: post/:id)
+        - specific location page template: 
+            - title
+            - town/city
+            - address if possible
+            - image
+            - story
+            - phenomena
+            - longitude/latitude (for map integration)
+            - voting button 
+            - user added by
     - login
+    - x - header/footer partitions
 
-* Build locations DB
+* x - Build locations DB
 
-* Build User DB
 
-* connect app to db
+* x - connect app to db
 
-* host app
+* host app, heroku for now
 
 * style pages:
     - addLocation
@@ -34,12 +55,20 @@
 
 * schema for user accounts
 
-* build DB for investigation data
+* schema for investigations 
 
 * schema for investigation data
 
-* x - add routes 
+* build DB for investigation data
+
+* Build User DB
+
+* x - add routes + controllers
 
 * add voting module 
 
 * multer for image uploads on locations/ CDN (cloudinary)
+
+* x - hook up addLocation form to DB
+	- add cloudinary middleware for pictures
+	- hook up image submission  

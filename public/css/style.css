@@ -27,12 +27,12 @@ body {
   width: 100%;
 }
 
-body h1 {
-  width: 33%;
-  margin: 10% auto; 
+#headerBanner {
+  width: 15%;
+  text-align: center;
+  margin: 2% auto;
   color: red;
   outline: 2px solid white;
-
 }
 
 
@@ -59,6 +59,7 @@ nav ul {
   background-color: red;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 nav a {
@@ -155,7 +156,11 @@ nav li {
 }
 
 footer {
-
+ width: 100%;
+ display: flex;
+ justify-content: space-around;
+ margin: 2% auto;
+ margin-top: 10%; 
 }
 
 /******************************************
@@ -171,4 +176,45 @@ nav a:hover {
 
 .team-board-info p {
   color: red;
+}
+
+/*============================================================================================*/
+
+/* about page*/
+.aboutImage {
+  display: block;
+  width: 25%;
+}
+
+
+/* specific location page */
+.specificLocationImage {
+  display: block;
+  width: 25%;
+}
+
+
+/* locations page */
+.locations-list-container {
+  width: 80%;
+  margin: 5% auto;
+}
+
+.locations-list {
+  width: 80%;
+  margin: 5% auto;
+}
+
+.locations-list-item {
+  display: flex;
+  justify-content: space-around;
+  padding: 2%;
+  outline: 3px solid white;
+  text-decoration: none;
+}
+
+a.location-list-item:hover {
+  cursor: pointer;
+  background-color: red;
+  color: black;
 }

@@ -5,6 +5,10 @@ const mongoose = require('mongoose')
 const connectDB = require("./config/database");
 const mainRoutes = require('./routes/main')
 const locationsRoutes = require('./routes/locations')
+const scheduleRoutes = require('./routes/schedule')
+const teamRoutes = require('./routes/team')
+const aboutRoutes = require('./routes/about')
+
 const PORT = 8300
 
 //Use .env file in config folder
@@ -30,6 +34,9 @@ app.use(express.json())
 //setup listening routes
 app.use('/', mainRoutes)
 app.use('/locations', locationsRoutes)
+app.use('/schedule', scheduleRoutes)
+app.use('/team', teamRoutes)
+app.use('/about', aboutRoutes)
 
 
 

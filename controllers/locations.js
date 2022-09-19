@@ -43,5 +43,12 @@ module.exports = {
         } catch(err) {
             console.log(err)
         }
+    },
+    specificLocation: async (req,res) => {
+        try {
+            res.render('specificLocation.ejs')
+        } catch (err) {
+            console.log(err)
+        }
     }
 };
