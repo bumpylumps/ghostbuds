@@ -1,6 +1,6 @@
 # TODO
 
-## Hours Logged: 8hrs
+## Hours Logged: 26 hrs
 
 * Build every page
     - home
@@ -8,6 +8,10 @@
         - edit copy, add how to, what is, etc...
     - scheduler
         - build calendar module
+            - clickable table for calendar, arrows to traverse months
+            - x form for time setting (dropdown? )
+            - textarea for investigation leader
+            - x button to submit for investigation schema
         - create investigation schema:
             - location - voting module
             - time/date - voting module

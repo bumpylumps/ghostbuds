@@ -5,7 +5,7 @@
 			<ul class="locations-list">
 				<% data.forEach(location => { %>
 					<li>
-						<a href="locations/specificLocation"
+						<a href="locations/specificLocation/<%= location._id%>"
 						class="locations-list-item">
 							<%= location.name %>
 							<p><%= location.phenomena %></p>

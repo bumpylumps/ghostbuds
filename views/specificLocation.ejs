@@ -1,24 +1,26 @@
 <%- include('partials/altHeader') -%>
 
-    <section>
+    <section>   
+        
         <section>
             <ul class="locationInfo">
-                <li>Title</li>
-                <li><img src="../location.jpg"
+                <li id="name" name="name"><%= location.name %></li>
+                <li><img src="/location.jpg"
                         class="specificLocationImage"></li>
-                <li>Town/City</li>
-                <li>Address</li>
-                <li>Story</li>
-                <li>Phenomena</li>
-                <li>longitude/latitude</li>
+                <li><%= location.townOrCity %></li>
+                <li><%= location.streetAddress %></li>
+                <li><%= location.story %></li>
+                <li><%= location.phenomena %></li>
+                <li><%= location.latitude %></li>
+                <li><%= location.longitude %></li>
                 <li>User Added By</li>
             </ul>
         </section>
-        <form>
+        <form action="<%= location._id %>/setLocation " method="get" id="setLocation">
         <button 
             class="voterButton"
             type="submit">
-            Vote as next Investigation
+            Set as next Investigation
         </button>
     </form>
 

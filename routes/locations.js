@@ -3,6 +3,7 @@ const router = express.Router();
 const locationsController = require("../controllers/locations")
 
 
+
 //Location Routes
 //get addlocation page
 router.get('/addLocation', locationsController.addLocation)
@@ -11,6 +12,9 @@ router.get('/addLocation', locationsController.addLocation)
 router.post("/newLocation", locationsController.newLocation); 
 
 //get specific location
-router.get('/specificLocation', locationsController.specificLocation);
+router.get('/specificLocation/:id', locationsController.specificLocation);
+
+
+router.get('/specificLocation/:id/setLocation', locationsController.setLocation);
 
 module.exports = router; 

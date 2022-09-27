@@ -218,3 +218,35 @@ a.location-list-item:hover {
   background-color: red;
   color: black;
 }
+
+button.voterButton {
+  background: red;
+  border-radius: 7%;
+}
+button.voterButton:hover {
+  cursor: pointer;
+}
+button.voterButton:active{
+  background:blue;
+}
+/* Calendar page */
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+ border: 1px solid white;
+ color: black;
+ padding: 3px;
+ text-align: center;
+}
+th {
+ font-weight: bold;
+ background-color: #E6E6E6;
+}
+
+td {
+  color: white;
+}

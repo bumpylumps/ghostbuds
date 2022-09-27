@@ -1,4 +1,5 @@
 const Location = require('../models/Location')
+const Investigation = require('../models/Investigation')
 
 
 module.exports = {
@@ -45,10 +46,27 @@ module.exports = {
         }
     },
     specificLocation: async (req,res) => {
+                try {
+                    const location = await Location.findById(req.params.id);
+                    res.render('specificLocation.ejs', {
+                            location: location
+                        })
+                        console.log(req.params._id)
+              } catch (err) {
+                console.log(err);
+              }
+    },
+    setLocation: async (req, res) => {
         try {
-            res.render('specificLocation.ejs')
+        let location = await Location.findById(req.params.id);
+        let name = location.name
+        await Investigation.findByIdAndUpdate('63320430577babf1e086d74d',
+          {
+            $set: {"location": `${name}`}
+          });
+          res.redirect(`/`);
         } catch (err) {
-            console.log(err)
+          console.log(err);
         }
     }
 };
