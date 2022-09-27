@@ -51,7 +51,6 @@ module.exports = {
                     res.render('specificLocation.ejs', {
                             location: location
                         })
-                        console.log(req.params._id)
               } catch (err) {
                 console.log(err);
               }

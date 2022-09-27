@@ -6,9 +6,14 @@ module.exports = {
     },
     setSchedule: async(req, res) => {
         try {
+            let leader = await req.body.leader
+            let time = await req.body.time
+            let date = await req.body.date
             await Investigation.findByIdAndUpdate('63320430577babf1e086d74d',
             {
-              $set: { "leader": `${req.params.leader}`}
+              $set: { "leader": `${leader}`,
+                        "time": `${time}`},
+                        "date": `${date}`
             });
 
           let investigation = await Investigation.findById('63320430577babf1e086d74d')
