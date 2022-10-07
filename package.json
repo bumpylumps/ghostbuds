@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/bumpylumps/ghostBuds#readme",
   "dependencies": {
+    "bootstrap": "^5.2.2",
     "cloudinary": "^1.31.0",
     "dotenv": "^16.0.1",
     "ejs": "^3.1.8",

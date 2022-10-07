@@ -1,7 +1,12 @@
 <%- include('partials/header') -%>
 
 		<section class="locations-list-container">
-			<h2>Locations List</h2>
+			<section class="location-header">
+				<h2>Locations List</h2>
+				<a href="locations/addLocation">Add a Location</a>
+			</section>
+
+
 			<ul class="locations-list">
 				<% data.forEach(location => { %>
 					<li>
@@ -14,7 +19,7 @@
 					</li>
 				<% }) %>
 			</ul>
-			<a href="locations/addLocation">Add a Location</a>
+			
 		</section>
 
 <%- include('partials/footer') -%>

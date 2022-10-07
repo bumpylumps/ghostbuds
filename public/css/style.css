@@ -25,10 +25,11 @@
 
 body {
   width: 100%;
+  background-color: black;
 }
 
 #headerBanner {
-  width: 15%;
+  width: 50%;
   text-align: center;
   margin: 2% auto;
   color: red;
@@ -39,7 +40,7 @@ body {
 
 .team-board-container h2 {
   width: 100%; 
-  color: red;
+  color: white;
   text-align: center;
 }
 
@@ -52,7 +53,7 @@ header {
 }
 
 nav ul {
-  width: 37%;
+  width: 100%;
   overflow: hidden;
   margin: 5% auto;
   padding: 0;
@@ -60,6 +61,7 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: .75rem;
 }
 
 nav a {
@@ -70,15 +72,16 @@ nav a {
 
 nav li {
   list-style: none;
-  padding: 0px 6%;
+  padding: 1% 5%;
   text-align: center;
   background-color: red;
 }
 
 .team-board-container {
-  width: 80%;
+  width: 65%;
   margin: 10% auto;
-  outline: 3px solid red;
+  outline: 1px solid red;
+  font-size: .75rem;
 }
 
 .team-board-info {
@@ -88,13 +91,14 @@ nav li {
 
 .team-board-info img {
   outline: 2px solid white;
-  width: 250px;
-  height: 300px;
+  width: 30%;
+  height: auto;
   margin: 5%;
 }
 
 .team-board-info ul {
-  margin: 5%;
+  margin: 5% 0%;
+  padding: 2% 2%;
 }
 
 
@@ -160,7 +164,16 @@ footer {
  display: flex;
  justify-content: space-around;
  margin: 2% auto;
+ font-size: .50rem;
  margin-top: 10%; 
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: red;
 }
 
 /******************************************
@@ -175,7 +188,9 @@ nav a:hover {
 }
 
 .team-board-info p {
-  color: red;
+  color: white;
+  width: 100%;
+  margin: 5%;
 }
 
 /*============================================================================================*/
@@ -200,15 +215,24 @@ nav a:hover {
   margin: 5% auto;
 }
 
+.location-header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .locations-list {
   width: 80%;
   margin: 5% auto;
+  padding: 0;
 }
 
 .locations-list-item {
   display: flex;
+  color: white;
   justify-content: space-around;
   padding: 2%;
+  font-size: .75rem;
   outline: 3px solid white;
   text-decoration: none;
 }
@@ -221,7 +245,9 @@ a.location-list-item:hover {
 
 button.voterButton {
   background: red;
+  width: 20%;
   border-radius: 7%;
+  margin: 2% auto;
 }
 button.voterButton:hover {
   cursor: pointer;
@@ -249,4 +275,28 @@ th {
 
 td {
   color: white;
+}
+
+.calendar-container {
+  width: 58%;
+  margin: 10% auto;
+  outline: 3px solid red;
+  font-size: .75rem;
+}
+
+section.time-schedule {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  margin: 2% auto;
+}
+
+.time-schedule label {
+  margin: 5% auto;
+}
+
+section.month-label {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2%;
 }

@@ -1,7 +1,11 @@
 <%- include('partials/header') -%>
 <form action="schedule/setSchedule" method="post">
     <section class='calendar-container'>
-        <h2 class="calendar-month">Month</h2><h3>< ></h3>
+        <section class="month-label">
+            <h3><</h3> 
+            <h2 class="calendar-month">Month</h2> 
+            <h3>></h3>
+        </section>
         <div id="calendar"></div>
     </section>
 
@@ -16,15 +20,13 @@
             <option value="ct">CT</option>
             <option value="pst">PST</option>
         </select>
-    </section>
-    <section class="investigation-leader">
         <label for="investigation-leader">
             Investigation Leader:</label>
         <input type="text" 
-        id="leader"
-        name="leader"
-        placeholder="Name of Leader">
+                id="leader"
+                name="leader"
+                placeholder="Name of Leader">
+        <button type="submit" class="voterButton">Submit</button> 
     </section>
-    <button type="submit" class="voterButton">Submit</button>
 </form>
 <%- include('partials/footer') -%>

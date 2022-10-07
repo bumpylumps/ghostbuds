@@ -1,6 +1,6 @@
 # TODO
 
-## Hours Logged: 26 hrs
+## Hours Logged: 33 hrs
 
 * Build every page
     - home
