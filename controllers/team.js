@@ -1,5 +1,14 @@
+const Investigation = require('../models/Investigation');
+
 module.exports = {
-    getTeam: (req, res) => {
-        res.render('team.ejs')
+        getTeam: (req, res) => {
+            try {
+            Investigation.findById('63320430577babf1e086d74d', (err, data) => {
+                res.render('index.ejs', {data})
+            })
+            
+            } catch(err) {
+                console.log(err)
+            }
+        }
     }
-}

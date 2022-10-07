@@ -1,3 +1,16 @@
 <%- include('partials/header') -%>
+		
+		<section class="team-board-container">
+			<h2>Team Board</h2>
+			<section class="team-board-info">
+				<img src="location.jpg" alt="location picture">
+				<ul>
+					<li><p>Next Investigation: <%= data.date.split('-').reverse().join('-') %></p></li>
+					<li><p>Investigation Leader: <%= data.leader %></p></li>
+					<li><p>Location: <%= data.location %></p></li>
+					<li><p>Location Description: [description]</p></li>
+				</ul>
+			</section>
+		</section>
 
 <%- include('partials/footer') -%>

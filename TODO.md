@@ -1,16 +1,17 @@
 # TODO
 
-## Hours Logged: 33 hrs
+## Hours Logged: 38.5 hrs
+
 
 * Build every page
     - home
     - about:
         - edit copy, add how to, what is, etc...
     - scheduler
-        - build calendar module
+        - x  build calendar module
             - clickable table for calendar, arrows to traverse months
             - x form for time setting (dropdown? )
-            - textarea for investigation leader
+            - x textarea for investigation leader
             - x button to submit for investigation schema
         - create investigation schema:
             - location - voting module
@@ -26,18 +27,18 @@
             - Location name
             - Picture
             - Phenomena
-            - add click with id for specific location page (use leon's buB pattern for feed posts: post/:id)
+            -  x add click with id for specific location page (use leon's buB pattern for feed posts: post/:id)
         - specific location page template: 
-            - title
-            - town/city
-            - address if possible
-            - image
-            - story
-            - phenomena
-            - longitude/latitude (for map integration)
-            - voting button 
-            - user added by
-    - login
+            -  x title
+            -  x town/city
+            -  x address if possible
+            -  x image
+            -  x story
+            -  x phenomena
+            -  x longitude/latitude (for map integration)
+            -  x voting button 
+            -  x user added by
+    - x login
     - x - header/footer partitions
 
 * x - Build locations DB
@@ -51,21 +52,21 @@
     - addLocation
         - figure out form styling
 
-* build by MVC standards
+*  x - build by MVC standards
 
-* add user auth
+*  x - add user auth
 
 *  x - build Schema for locations
 
-* schema for user accounts
+*  x - schema for user accounts
 
-* schema for investigations 
+*  x - schema for investigations 
 
 * schema for investigation data
 
 * build DB for investigation data
 
-* Build User DB
+*  x - Build User DB
 
 * x - add routes + controllers
 
