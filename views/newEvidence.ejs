@@ -4,7 +4,7 @@
     <h2>ADD YOUR EVIDENCE</h2>
 </section>
 
-<form action="/teams/newEvidence" id="evidence-form" method="POST" class="evidence-form-container">
+<form action="/team/createEvidence" id="evidence-form" method="POST" class="evidence-form-container">
     <section class="evidence-form-interior">
         <div>
                 <label for="location">Location:</label>
@@ -15,10 +15,12 @@
             <textarea rows="6" cols="45"
             id="notes" name='notes'></textarea>
         </div>
-     
-        
-        <input id="location-submit-button" type="submit" class="button" value="Submit">
+        <div class="mb-3">
+            <label for="imgUpload" class="form-label">Image</label>
+            <input type="file" class="form-control" id="imageUpload" name="file">
+          </div>
+        <button id="location-submit-button" type="submit" class="button" value="Upload">Submit</button>
     </section>
 </form>
 
-<%- include('partials/footer') -%>
+<%- include('partials/altFooter') -%>

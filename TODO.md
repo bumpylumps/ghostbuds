@@ -1,6 +1,6 @@
 # TODO
 
-## Hours Logged: 41 hrs
+## Hours Logged: 44 hrs
 
 * urgent: 
         - update add location button to only show up

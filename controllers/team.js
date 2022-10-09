@@ -1,3 +1,4 @@
+const cloudinary = require("../middleware/cloudinary");
 const Investigation = require('../models/Investigation');
 const User = require('../models/User')
 const Location = require('../models/Location')
@@ -9,7 +10,7 @@ module.exports = {
             const user = await User.findById({ _id: req.user.id }) 
             const investigation = await Investigation.findById('63320430577babf1e086d74d')
             const location = await Location.find({ name: investigation.location })
-            console.log(location[0])
+
             res.render('team.ejs', { investigation: investigation, user: user, location: location })
             } catch(err) {
                 console.log(err)
@@ -26,14 +27,15 @@ module.exports = {
             try {
                 //cloudinary upload
                 const result = await cloudinary.uploader.upload(req.file.path);
-
-                const evidence = new Evidence({
+                
+                await Evidence.create({
                     date: req.body.date,
                     location: req.body.location,
                     notes: req.body.notes,
-                    image: result.secure.url,
+                    image: result.secure_url,
                     cloudinaryId: result.public_id,
-                    audio: result.secure.url
+                    audio: result.secure_url,
+                    user: req.user.id
                 });
                 console.log('Evidence has been added!');
                 res.redirect("/team")
@@ -42,4 +44,4 @@ module.exports = {
             }
         },
         
-    }
+    };
