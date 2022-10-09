@@ -17,6 +17,14 @@
 		<section class="evidence-container team-board-container">
 		
 			<h3>Evidence Area</h3>
+			<ul class="evidence-list">
+				<% evidenceFiles.forEach(evidence => { %>
+					<li><%= evidence.notes %></li>
+					<img 
+						src=<%= evidence.image %>
+						class="evidence-image"  />
+				<% }) %>
+			</ul> 
 			<a href="/team/NewEvidencePage">Add Evidence</a>
 		</section> 
 

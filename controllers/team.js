@@ -10,8 +10,8 @@ module.exports = {
             const user = await User.findById({ _id: req.user.id }) 
             const investigation = await Investigation.findById('63320430577babf1e086d74d')
             const location = await Location.find({ name: investigation.location })
-
-            res.render('team.ejs', { investigation: investigation, user: user, location: location })
+            const evidenceFiles = await Evidence.find({})
+            res.render('team.ejs', { investigation: investigation, user: user, location: location, evidenceFiles: evidenceFiles })
             } catch(err) {
                 console.log(err)
             }

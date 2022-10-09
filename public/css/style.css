@@ -301,3 +301,11 @@ section.month-label {
   justify-content: space-evenly;
   margin: 2%;
 }
+
+
+/* team pages */
+
+.evidence-image {
+  width: 30%;
+  height: auto;
+}
