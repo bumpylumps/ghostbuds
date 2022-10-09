@@ -1,16 +1,26 @@
 <%- include('partials/header') -%>
 		
 		<section class="team-board-container">
-			<h2>Team Board</h2>
+			<h2><%= user.userName %>'s Next Investigation</h2>
 			<section class="team-board-info">
 				<img src="location.jpg" alt="location picture">
 				<ul>
-					<li><p>Next Investigation: <%= data.date.split('-').reverse().join('-') %></p></li>
-					<li><p>Investigation Leader: <%= data.leader %></p></li>
-					<li><p>Location: <%= data.location %></p></li>
-					<li><p>Location Description: [description]</p></li>
+					<li><p>Scheduled for: <%= investigation.date.split('-').reverse().join('-') %></p></li>
+					<li><p>Led by: <%= investigation.leader %></p></li>
+					<li><p>Location: <%= investigation.location %></p></li>
+					<li><p>Area: <%= location[0].townOrCity %>, <%= location[0].state %></p></li>
+					<li><p>Location Story: <%= location[0].story %></p></li>
 				</ul>
 			</section>
 		</section>
+
+		<section class="evidence-container team-board-container">
+		
+			<h3>Evidence Area</h3>
+			<a href="/team/NewEvidencePage">Add Evidence</a>
+		</section> 
+
+		
+
 
 <%- include('partials/footer') -%>

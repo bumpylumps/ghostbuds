@@ -2,19 +2,20 @@
 
 		<section class="locations-list-container">
 			<section class="location-header">
-				<h2>Locations List</h2>
-				<a href="locations/addLocation">Add a Location</a>
+					<h2>Locations List</h2>
+					<a href="locations/addLocation" id="addButton">Add a Location</a>
 			</section>
 
 
 			<ul class="locations-list">
-				<% data.forEach(location => { %>
+				<% generalLocations.forEach(location => { %>
 					<li>
 						<a href="locations/specificLocation/<%= location._id%>"
 						class="locations-list-item">
 							<%= location.name %>
 							<p><%= location.phenomena %></p>
 							<p><%= location.state %></p>
+							<p>Added By: <%= location.userName %></p>
 						</a>
 					</li>
 				<% }) %>

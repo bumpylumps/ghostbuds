@@ -7,9 +7,9 @@ const LocationSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    team: {
-        type: String,
-        required: false
+    userName: {
+        type: String, 
+        required: true
     },
     streetAddress: {
         type: String, 

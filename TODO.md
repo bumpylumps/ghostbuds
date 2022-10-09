@@ -1,12 +1,23 @@
 # TODO
 
-## Hours Logged: 38.5 hrs
+## Hours Logged: 41 hrs
+
+* urgent: 
+        - update add location button to only show up
+            when logged in
+        - update locations list to show private locations
+            when user logged in
+         
 
 
 * Build every page
     - home
     - about:
         - edit copy, add how to, what is, etc...
+            - talk about experience over evidence
+            - emphasize safety
+            - emphasize building teams
+    
     - scheduler
         - x  build calendar module
             - clickable table for calendar, arrows to traverse months
@@ -18,6 +29,10 @@
             - time/date - voting module
             - Investigation Leader
     - team data
+        - display team members and data 
+        - add field for viewing notes, media
+        - add form to upload notes, media
+
     - locations
         - voting module (button)
         - x addlocation
@@ -38,7 +53,9 @@
             -  x longitude/latitude (for map integration)
             -  x voting button 
             -  x user added by
-    - x login
+    - x - login/signup
+            - add team field to signup form
+
     - x - header/footer partitions
 
 * x - Build locations DB

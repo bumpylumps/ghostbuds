@@ -5,11 +5,9 @@ const Investigation = require('../models/Investigation')
 module.exports = {
     getLocations : async(req, res) => {
         try {
-            Location.find({}, (err, data) => {
-                res.render('locations.ejs', {
-                    data
-                })
-            })
+            const generalLocations = await Location.find({});
+            //const userLocations = await Location.find({ username: req.user.username });
+            res.render('locations.ejs', { generalLocations: generalLocations /*userLocations: userLocations*/ }) 
 
         } catch (err) {
             console.log(err)
@@ -26,6 +24,7 @@ module.exports = {
         
             const location = new Location({
                 name: req.body.locationName,
+                userName: req.user.userName,
                 townOrCity: req.body.townOrCity,
                 state: req.body.state,
                 latitude: req.body.latitude,
@@ -39,7 +38,7 @@ module.exports = {
             
             await location.save()
             console.log("Location has been added!")
-            res.redirect('/locations')
+            res.redirect('/team')
 
         } catch(err) {
             console.log(err)
@@ -63,7 +62,7 @@ module.exports = {
           {
             $set: {"location": `${name}`}
           });
-          res.redirect(`/`);
+          res.redirect(`/team`);
         } catch (err) {
           console.log(err);
         }

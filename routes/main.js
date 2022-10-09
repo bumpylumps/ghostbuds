@@ -9,7 +9,7 @@ const aboutController = require('../controllers/about');
 const { ensureAuth, ensureGuest } = require("../middleware/auth");
 
 router.get('/', homeController.getIndex)
-router.get('/locations', ensureAuth, locationsController.getLocations);
+router.get('/locations', locationsController.getLocations);
 router.get('/schedule', ensureAuth, scheduleController.getSchedule);
 router.get('/team', ensureAuth, teamsController.getTeam);
 router.get('/about', aboutController.getAbout);

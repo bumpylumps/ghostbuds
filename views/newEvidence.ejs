@@ -1,0 +1,24 @@
+<%- include('partials/altHeader') -%>
+
+<section class="evidence-header-container">
+    <h2>ADD YOUR EVIDENCE</h2>
+</section>
+
+<form action="/teams/newEvidence" id="evidence-form" method="POST" class="evidence-form-container">
+    <section class="evidence-form-interior">
+        <div>
+                <label for="location">Location:</label>
+                <input class="input-field" type="text" placeholder="Location Name" id="evidenceLocation" name='evidenceLocation'>
+        </div>
+        <div>
+            <label for="notes">Notes:</label>
+            <textarea rows="6" cols="45"
+            id="notes" name='notes'></textarea>
+        </div>
+     
+        
+        <input id="location-submit-button" type="submit" class="button" value="Submit">
+    </section>
+</form>
+
+<%- include('partials/footer') -%>
