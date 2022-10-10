@@ -29,8 +29,9 @@ body {
 }
 
 #headerBanner {
-  width: 50%;
+  width: fit-content;
   text-align: center;
+  padding: 0 2%;
   margin: 2% auto;
   color: red;
   outline: 2px solid white;
@@ -39,7 +40,8 @@ body {
 
 
 .team-board-container h2 {
-  width: 100%; 
+  width: 100%;
+  padding: 5% 0;
   color: white;
   text-align: center;
 }
@@ -52,6 +54,14 @@ header {
 
 }
 
+a {
+  color: white;
+}
+
+a:hover {
+  color: red;
+}
+
 nav ul {
   width: 100%;
   overflow: hidden;
@@ -61,7 +71,7 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: .75rem;
+  font-size: 1.25rem;
 }
 
 nav a {
@@ -93,7 +103,7 @@ nav li {
 .team-board-info img {
   outline: 2px solid white;
   width: 30%;
-  height: auto;
+  height: fit-content;
   margin: 5%;
 }
 
@@ -106,32 +116,62 @@ nav li {
 /*add a location page*/
 
 .location-header-container h2 {
-  width: 60%;
+  width: fit-content;
   margin: 0 auto;
   font-size: 55px;
 }
 
-
+form#location-form {
+  display: flex;
+  background-color: rgba(57,57,54,.05);
+}
 
 .location-form-container {
-  width: 65%;
+  width: fit-content;
   margin: 5% auto;
-  outline: 3px solid red;
-  padding: 5%;
   display: flex;
   align-items: center;
+  padding: 2%;
+  background-color: rgba(54,54,57, .75);
+  justify-content: space-evenly;
+}
+
+#locationButton {
+  margin: 0 auto;
+  margin-top: 5%;
+  width: fit-content;
+  background-color: red;
+  border: none;
+}
+
+.location-form-interior input {
+  width: 86%;
 }
 
 .location-form-interior {
   display: flex;
   flex-direction: column;
   width: 50%;
-  height: 320px;
-  padding: 0 2%;
+  height: auto;
+  background-color: rgba(54,54,57, .05);
+  padding: 0 5%;
 }
 
+
+
+#locationButton:hover {
+  background-color: rgb(198, 0, 0);
+  border: none;
+}
+
+
 .location-form-interior div{
-  margin: 1% auto;
+  margin: 4% 0;
+  background-color: rgba(54,54,57, .05);
+}
+
+.location-form-interior label {
+  background-color: rgba(54,54,57, .05);
 }
 
 .location-form-container img {
@@ -140,7 +180,7 @@ nav li {
   margin: 5%;
 }
 
-#location-image-container {
+.location-image-container {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -161,12 +201,12 @@ nav li {
 }
 
 footer {
- width: 100%;
- display: flex;
- justify-content: space-around;
- margin: 2% auto;
- font-size: .50rem;
- margin-top: 10%; 
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0% auto;
+  font-size: .75rem;
+  margin-top: 9%;
 }
 
 footer a {
@@ -190,11 +230,53 @@ nav a:hover {
 
 .team-board-info p {
   color: white;
-  width: 100%;
+  width: fit-content;
   margin: 5%;
+  font-size: 1rem;
 }
 
 /*============================================================================================*/
+
+/* home page */
+.home-container {
+  width: fit-content;
+  margin: 8% auto;
+  padding: 5%;
+  background-color: rgba(54,54,57,.75);
+}
+
+.home-container h2 {
+  background-color: rgba(54,54,57,.05);
+  margin-bottom: 8%;
+}
+
+.home-container p {
+  background-color: rgba(54,54,57,.05);
+  margin-bottom: 8%;
+}
+
+/*login page*/
+main.container {
+  display: flex;
+  margin: 6% auto;
+  width: 50%;
+  flex-direction: column;
+}
+
+section.signup-link-container {
+  width: auto;
+  margin-top: 5%;
+}
+
+button.btn.btn-primary {
+  background-color: red;
+  border: none;
+}
+
+button.btn.btn-primary:hover {
+  background-color: rgb(198, 0, 0);
+  border: none;
+}
 
 /* about page*/
 .aboutImage {
@@ -225,7 +307,6 @@ nav a:hover {
 .locations-list {
   width: 80%;
   margin: 5% auto;
-  padding: 0;
 }
 
 .locations-list-item {
@@ -233,16 +314,25 @@ nav a:hover {
   color: white;
   justify-content: space-around;
   padding: 2%;
-  font-size: .75rem;
-  outline: 3px solid white;
+  font-size: 1rem;
+  outline: 1.5px solid red;
   text-decoration: none;
 }
 
-a.location-list-item:hover {
+.locations-list-item:hover {
   cursor: pointer;
   background-color: red;
-  color: black;
+  color: white;
 }
+
+
+
+
+
+p.red {
+  background-color: rgba(0,0,0,0);
+}
+
 
 button.voterButton {
   background: red;
@@ -287,9 +377,15 @@ td {
 
 section.time-schedule {
   display: flex;
-  width: 50%;
+  width: fit-content;
   flex-direction: column;
   margin: 2% auto;
+  padding: 5%;
+  background-color: rgba(54,54,57, .75);
+}
+
+section.time-schedule label {
+  background-color: rgba(54,54,57, .05);
 }
 
 .time-schedule label {
@@ -300,4 +396,56 @@ section.month-label {
   display: flex;
   justify-content: space-evenly;
   margin: 2%;
+}
+
+
+.schedule-button {
+  margin: 0 auto;
+  margin-top: 15%;
+  width: fit-content;
+}
+
+/* team pages */
+
+.evidence-image {
+  width: 30%;
+  height: auto;
+}
+
+.evidence-banner {
+  display: flex;
+  justify-content: space-around;
+  margin: 0%;
+  padding: 5% 0;
+}
+
+.evidence-banner a {
+  font-size: 1.5rem;
+}
+
+section.evidence-form-interior {
+  display: flex;
+  width: fit-content;
+  padding: 2%;
+  margin: 2% auto;
+  background-color: rgba(57,57,54,.75);
+  flex-direction: column;
+}
+
+#evidenceDiv {
+  margin: 3%;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(54,54,57, .05);
+}
+
+
+#evidenceDiv label {
+  background-color: rgba(57,57,54, 0);
+}
+
+.evidence-header-container h2 {
+  width: fit-content;
+  margin: 0 auto;
 }

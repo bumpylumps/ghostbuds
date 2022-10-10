@@ -1,6 +1,7 @@
 const passport = require("passport");
 const validator = require("validator");
 const User = require("../models/User");
+const Investigation = require("../models/Investigation")
 
 
 exports.getLogin = (req, res) => {
@@ -86,12 +87,16 @@ exports.postSignup = (req, res, next) => {
         gmail_remove_dots: false,
     });
 
+    
+
     const user = new User({
         userName: req.body.userName,
         email: req.body.email, 
         password: req.body.password,
     });
-
+    const investigation = new Investigation({
+        user: req.body.userName
+    })
     User.findOne(
         { $or: [{ email: req.body.email }, { userName: req.body.userName}] },
         (err, existingUser) => {
@@ -112,9 +117,11 @@ exports.postSignup = (req, res, next) => {
                     if (err) {
                         return next(err);
                     }
-                    res.redirect("/team");
+                    investigation.save({})
+                    res.redirect("/locations");
                 });
             });
+
         }
     );
 };

@@ -39,7 +39,7 @@
         <section>
             <ul class="locationInfo">
                 <li id="name" name="name"><%= location.name %></li>
-                <li><img src="/location.jpg"
+                <li><img src= <%- location.image ? location.image : "/location.jpg" %>
                         class="specificLocationImage"></li>
                 <li><%= location.townOrCity %></li>
                 <li><%= location.streetAddress %></li>
@@ -48,12 +48,12 @@
                 <li><%= location.phenomena %></li>
                 <li><%= location.latitude %></li>
                 <li><%= location.longitude %></li>
-                <li>User Added By</li>
+                <li>Added By: <%= location.userName %></li>
             </ul>
         </section>
         <form action="<%= location._id %>/setLocation " method="get" id="setLocation">
         <button 
-            class="voterButton"
+            class="btn btn-primary"
             type="submit">
             Set as next Investigation
         </button>
@@ -63,4 +63,4 @@
     </section>
 
 
-<%- include('partials/footer') -%>
+<%- include('partials/altFooter') -%>

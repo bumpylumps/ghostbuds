@@ -1,7 +1,9 @@
 const mongoose = require('mongoose')
 
 const EvidenceSchema = new mongoose.Schema({
-
+    user: {
+        type: String
+    },
     date: {
         type: Date, 
         default: Date.now

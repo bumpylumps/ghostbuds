@@ -1,56 +1,57 @@
 <%- include('partials/altHeader') -%>
-        <section class="location-header-container">
-            <h2>ADD YOUR OWN LOCATION</h2>
-        </section>
-        
-        <form action="/locations/newLocation" id="location-form"  method="POST" class="location-form-container">
-            <div id="location-image-container">
-                <img src="../location.jpg">
-                <input id="location-image-submit-button" class="button" type="button" value="Add a Picture">
-            </div>
-
-        <section class="location-form-interior">
-            <div>
+    <section class="location-header-container">
+        <h2>ADD YOUR OWN LOCATION</h2>
+    </section>
+    <section  class="location-form-container">
+    
+        <form action="/locations/newLocation" id="location-form" method="POST" enctype="multipart/form-data">
+            <section class="location-form-interior">         
+                <div class="mb-3">
+                    <label for="imgUpload" class="form-label">Add an Image:</label>
+                    <input type="file" class="form-control" id="imageUpload" name="file">
+                </div>
+                <div>
                     <label for="locationName">Name:</label>
                     <input class="input-field" type="text" placeholder="Name" id="locationName" name='locationName'>
+                </div>
+                <div>
+                    <label for="streetAddress">Street Address:</label>
+                    <input class="input-field" type="text" placeholder="Street" id="streetAddress" name='streetAddress'>
+                </div>
+                <div>
+                    <label for="townOrCity">Town/City:</label>
+                    <input class="input-field" type="text" placeholder="City" id="townOrCity" name='townOrCity'>
+                </div>
+                <div>
+                    <label for="state">State:</label>
+                    <input class="input-field" type="text" placeholder="State" id="state" name='state'>
+                </div>
+                <div>
+                    <label for="latitude">Latitude:</label>
+                    <input class="input-field" type="text" placeholder="Latitude" id="latitude" name='latitude'>
+                </div>
+                <div>
+                    <label for="longitude">Longitude:</label>
+                    <input class="input-field" type="text" placeholder="Longitude" id="longitude" name='longitude'>
+                </div>
+            </section>  
+            <section class="location-form-interior">
+            <div>
+                <label for="phenomena">Phenomena:</label>
+                <input class="input-field" type="text" placeholder="Phenomena" id="phenomena" name='phenomena'>
             </div>
             <div>
-                <label for="streetAddress">Street Address:</label>
-                <input class="input-field" type="text" placeholder="Street" id="streetAddress" name='streetAddress'>
-        </div>
-        <div>
-            <label for="townOrCity">Town/City:</label>
-            <input class="input-field" type="text" placeholder="City" id="townOrCity" name='townOrCity'>
-        </div>
-        <div>
-            <label for="state">State:</label>
-            <input class="input-field" type="text" placeholder="State" id="state" name='state'>
-        </div>
-        <div>
-            <label for="latitude">Latitude:</label>
-            <input class="input-field" type="text" placeholder="Latitude" id="latitude" name='latitude'>
-        </div>
-        <div>
-            <label for="longitude">Longitude:</label>
-            <input class="input-field" type="text" placeholder="Longitude" id="longitude" name='longitude'>
-        </div>
-        <div>
-            <label for="phenomena">Phenomena:</label>
-            <input class="input-field" type="text" placeholder="Phenomena" id="phenomena" name='phenomena'>
-        </div>
-        <div>
-            <label for="story">Story:</label>
-            <textarea rows="6" cols="45"
-            id="story" name='story'></textarea>
-        </div>
-        <div>
-            <label for="source">Source:</label>
-            <input class="input-field" type="text" placeholder="Source" id="source" name='source'>
-        </div>
-            <input id="location-submit-button" type="submit" class="button" value="Submit">
-        </section>
+                <label for="story">Story:</label>
+                <textarea rows="6" cols="30"
+                id="story" name='story'></textarea>
+            </div>
+            <div>
+                <label for="source">Source:</label>
+                <input class="input-field" type="text" placeholder="Source" id="source" name='source'>
+            </div>
+                <input type="submit" class="button btn btn-primary location-button" id="locationButton" value="Submit">
+            </section>
         </form>
+    </section>
 
-        <a href="">Go to added location</a>
-
-		<%- include('partials/footer') -%>
+		<%- include('partials/altFooter') -%>

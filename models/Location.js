@@ -11,6 +11,9 @@ const LocationSchema = new mongoose.Schema({
         type: String, 
         required: true
     },
+    cloudinaryId: {
+        type: String
+    },
     streetAddress: {
         type: String, 
         required: false
@@ -39,7 +42,7 @@ const LocationSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    pictureUrl: {
+    image: {
         type: String, 
         required: false
     },

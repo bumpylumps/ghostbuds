@@ -9,7 +9,7 @@ module.exports = {
             let leader = await req.body.leader
             let time = await req.body.time
             let date = await req.body.date
-            await Investigation.findByIdAndUpdate('63320430577babf1e086d74d',
+            await Investigation.findOneAndUpdate({user: req.user.userName},
             {
               $set: { "leader": `${leader}`,
                         "time": `${time}`},
@@ -18,7 +18,7 @@ module.exports = {
 
           let investigation = await Investigation.findById('63320430577babf1e086d74d')
           console.log(investigation);
-          res.redirect(`/`);
+          res.redirect(`/team`);
         } catch (err) {
             console.log(err);
         }

@@ -2,13 +2,13 @@ const mongoose = require('mongoose')
 
 const InvestigationSchema = new mongoose.Schema({
 
-    team: {
+    user: {
         type: String,
-        required: false
+        required: true
     },
     location: {
         type: String,
-        required: true
+        required: false
     },
     time: {
         type: String,

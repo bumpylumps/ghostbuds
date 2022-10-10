@@ -1,3 +1,4 @@
+const cloudinary = require('../middleware/cloudinary')
 const Location = require('../models/Location')
 const Investigation = require('../models/Investigation')
 
@@ -21,8 +22,13 @@ module.exports = {
         }
     },
     newLocation: async (req,res) => {
-        
+           try {
+
+            const result = await cloudinary.uploader.upload(req.file.path)
+            
             const location = new Location({
+                image: result.secure_url,
+                cloudinaryId: result.public_id,
                 name: req.body.locationName,
                 userName: req.user.userName,
                 townOrCity: req.body.townOrCity,
@@ -34,11 +40,11 @@ module.exports = {
                 source:  req.body.source
             });
             
-            try {
+         
             
             await location.save()
             console.log("Location has been added!")
-            res.redirect('/team')
+            res.redirect('/locations')
 
         } catch(err) {
             console.log(err)
@@ -50,6 +56,7 @@ module.exports = {
                     res.render('specificLocation.ejs', {
                             location: location
                         })
+                        console.log(location)
               } catch (err) {
                 console.log(err);
               }
@@ -58,7 +65,8 @@ module.exports = {
         try {
         let location = await Location.findById(req.params.id);
         let name = location.name
-        await Investigation.findByIdAndUpdate('63320430577babf1e086d74d',
+       await Investigation.findOneAndUpdate(
+            { user: req.user.userName },
           {
             $set: {"location": `${name}`}
           });

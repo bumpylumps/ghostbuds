@@ -8,10 +8,10 @@ module.exports = {
         getTeam: async (req, res) => {
             try {
             const user = await User.findById({ _id: req.user.id }) 
-            const investigation = await Investigation.findById('63320430577babf1e086d74d')
+            const investigation = await Investigation.findOne({user : req.user.userName})
             const location = await Location.find({ name: investigation.location })
-
-            res.render('team.ejs', { investigation: investigation, user: user, location: location })
+            const evidenceFiles = await Evidence.find({ user: req.user.id })
+            res.render('team.ejs', { investigation: investigation, user: user, location: location, evidenceFiles: evidenceFiles })
             } catch(err) {
                 console.log(err)
             }
@@ -30,7 +30,7 @@ module.exports = {
                 
                 await Evidence.create({
                     date: req.body.date,
-                    location: req.body.location,
+                    location: req.body.evidenceLocation,
                     notes: req.body.notes,
                     image: result.secure_url,
                     cloudinaryId: result.public_id,

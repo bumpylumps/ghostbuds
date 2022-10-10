@@ -4,22 +4,22 @@
     <h2>ADD YOUR EVIDENCE</h2>
 </section>
 
-<form action="/team/createEvidence" id="evidence-form" method="POST" class="evidence-form-container">
+<form action="/team/createEvidence" id="evidence-form" method="POST" class="evidence-form-container" enctype="multipart/form-data">
     <section class="evidence-form-interior">
-        <div>
+        <div id="evidenceDiv">
                 <label for="location">Location:</label>
                 <input class="input-field" type="text" placeholder="Location Name" id="evidenceLocation" name='evidenceLocation'>
         </div>
-        <div>
+        <div id="evidenceDiv">
             <label for="notes">Notes:</label>
             <textarea rows="6" cols="45"
             id="notes" name='notes'></textarea>
         </div>
-        <div class="mb-3">
+        <div id="evidenceDiv" class="mb-3">
             <label for="imgUpload" class="form-label">Image</label>
             <input type="file" class="form-control" id="imageUpload" name="file">
           </div>
-        <button id="location-submit-button" type="submit" class="button" value="Upload">Submit</button>
+        <button id="location-submit-button" type="submit" class="button btn btn-primary location-button" value="Upload">Submit</button>
     </section>
 </form>
 
