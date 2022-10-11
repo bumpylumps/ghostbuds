@@ -3,7 +3,7 @@ A private platform for organizing paranormal investigations
 
 **Link to project:** https://ghostbuds.herokuapp.com/
 
-![ghost](ghostPic.jpg)
+![ghost](ghostBudsLandingPic.JPG)
 
 ## How It's Made:
 
