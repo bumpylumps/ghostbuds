@@ -10,6 +10,7 @@
 					<li><p><strong>Scheduled for:</strong> <%= investigation.date %></p></li>
 					<li><p><strong>Led by: </strong> <%= investigation.leader %></p></li>
 					<li><p><strong>Location: </strong> <%= investigation.location %></p></li>
+					<li><p><strong>Long,Lat: </strong> <%- location ?  location.latitude + " , " + location.longitude : "" %></p></li>
 					<li><p><strong>Area: </strong> <%- investigation.location ? location.townOrCity + ", " + location.state : "" %></p></li>
 					<li><p><strong>Location Story: </strong><%- location ? location.story : "" %></p></li>
 				</ul>

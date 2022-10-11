@@ -285,7 +285,21 @@ button.btn.btn-primary:hover {
 /* about page*/
 .aboutImage {
   display: block;
-  width: 25%;
+  width: fit-content;
+  max-width: 50%;
+}
+
+.about-container{
+  width: 65%;
+  padding: 5%;
+  padding-top: 2%;
+  margin: 10% auto;
+  outline: 1px solid red;
+  font-size: 1.25rem;
+}
+
+.about-container h3, .about-container h2 {
+  margin-top: 10%;
 }
 
 
