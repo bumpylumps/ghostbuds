@@ -9,7 +9,7 @@ module.exports = {
             try {
             const user = await User.findById({ _id: req.user.id }) 
             const investigation = await Investigation.findOne({user : req.user.userName})
-            const location = await Location.find({ name: investigation.location })
+            const location = await Location.findOne({ name: investigation.location })
 
             const evidenceFiles = await Evidence.find({ user: req.user.id })
 

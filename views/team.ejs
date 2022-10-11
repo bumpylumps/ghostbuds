@@ -3,14 +3,15 @@
 		<section class="team-board-container">
 			<h2><%= user.userName %>'s Next Investigation</h2>
 			<section class="team-board-info">
-				<img src= <%- location[0].image ? location.image : "/location.jpg" %>
-                        class="specificLocationImage">
+				<img 
+					src= <%- location.image ? location.image : "/location.jpg" %>
+					>
 				<ul>
 					<li><p><strong>Scheduled for:</strong> <%= investigation.date %></p></li>
-					<li><p><strong>Led by:</strong> <%= investigation.leader %></p></li>
-					<li><p><strong>Location:</strong> <%= investigation.location %></p></li>
-					<li><p><strong>Area:</strong> <%= location[0].townOrCity %>, <%= location[0].state %></p></li>
-					<li><p><strong>Location Story:</strong> <%= location[0].story %></p></li>
+					<li><p><strong>Led by: </strong> <%= investigation.leader %></p></li>
+					<li><p><strong>Location: </strong> <%= investigation.location %></p></li>
+					<li><p><strong>Area: </strong> <%- investigation.location ? location.townOrCity + ", " + location.state : "" %></p></li>
+					<li><p><strong>Location Story: </strong><%- location ? location.story : "" %></p></li>
 				</ul>
 			</section>
 		</section>
