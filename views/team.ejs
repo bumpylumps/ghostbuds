@@ -26,6 +26,14 @@
 =======
 		
 			<h3>Evidence Area</h3>
+			<ul class="evidence-list">
+				<% evidenceFiles.forEach(evidence => { %>
+					<li><%= evidence.notes %></li>
+					<img 
+						src=<%= evidence.image %>
+						class="evidence-image"  />
+				<% }) %>
+			</ul> 
 			<a href="/team/NewEvidencePage">Add Evidence</a>
 >>>>>>> 4b42478196c9c2727df1596b3d54df5654352089
 		</section> 
