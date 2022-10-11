@@ -33,6 +33,7 @@ module.exports = {
                 userName: req.user.userName,
                 townOrCity: req.body.townOrCity,
                 state: req.body.state,
+                streetAddress: req.body.streetAddress,
                 latitude: req.body.latitude,
                 longitude: req.body.longitude,
                 phenomena: req.body.phenomena,

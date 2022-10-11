@@ -35,31 +35,37 @@
 		</nav>
 
     <section>   
-        
-        <section>
+        <section class="specific-location-container">
             <ul class="locationInfo">
-                <li id="name" name="name"><%= location.name %></li>
-                <li><img src= <%- location.image ? location.image : "/location.jpg" %>
-                        class="specificLocationImage"></li>
-                <li><%= location.townOrCity %></li>
-                <li><%= location.streetAddress %></li>
-                <li><%= location.state %></li>
-                <li><%= location.story %></li>
-                <li><%= location.phenomena %></li>
-                <li><%= location.latitude %></li>
-                <li><%= location.longitude %></li>
-                <li>Added By: <%= location.userName %></li>
+				<section class="specific-location-header">
+                	<h3 id="name" name="name"><%= location.name %></h3>
+                </section>
+				<section class="specific-location-image-container">
+					<img src= <%- location.image ? location.image : "/location.jpg" %>
+                        class="specificLocationImage">
+				</section>
+				<section class="specific-location-info-container">
+                	<li><strong>Where: </strong><%- location.streetAddress ? location.streetAddress +"," : "N/A" %></li>
+					<section id="indent">
+						<li><%= location.townOrCity %>, <%= location.state %></li>
+						<li><%= location.latitude %></li>
+                		<li><%= location.longitude %></li>
+					</section>
+					<li><strong>Reported Phenomena: </strong><%= location.phenomena %></li>
+					<li><strong>Reported Story: </strong><%= location.story %></li>
+                	<li><strong>Added By: </strong><%= location.userName %></li>
+				  
+					<form action="<%= location._id %>/setLocation " method="get" id="setLocation">
+        				<button 
+        				    class="btn btn-primary"
+        				    type="submit">
+        				    Set as next Investigation
+        				</button>
+    				</form>
+				</section>
             </ul>
-        </section>
-        <form action="<%= location._id %>/setLocation " method="get" id="setLocation">
-        <button 
-            class="btn btn-primary"
-            type="submit">
-            Set as next Investigation
-        </button>
-    </form>
-
-    <a href="/locations"> Back to Locations </a>
+    </section>
+      
     </section>
 
 

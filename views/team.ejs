@@ -3,7 +3,8 @@
 		<section class="team-board-container">
 			<h2><%= user.userName %>'s Next Investigation</h2>
 			<section class="team-board-info">
-				<img src="location.jpg" alt="location picture">
+				<img src= <%- location[0].image ? location.image : "/location.jpg" %>
+                        class="specificLocationImage">
 				<ul>
 					<li><p><strong>Scheduled for:</strong> <%= investigation.date %></p></li>
 					<li><p><strong>Led by:</strong> <%= investigation.leader %></p></li>
@@ -15,17 +16,21 @@
 		</section>
 
 		<section class="evidence-container team-board-container">
-		
-			<h3>Evidence Area</h3>
+			<section class="evidence-banner">
+				<h3>Evidence Area</h3>
+				<a href="/team/NewEvidencePage">Add Evidence</a>
+			</section>
+
 			<ul class="evidence-list">
 				<% evidenceFiles.forEach(evidence => { %>
-					<li><%= evidence.notes %></li>
-					<img 
-						src=<%= evidence.image %>
-						class="evidence-image"  />
+					<li><p><%= evidence.notes %></p>
+						<img 
+							src=<%= evidence.image %>
+							class="evidence-image"  />
+					</li>
 				<% }) %>
 			</ul> 
-			<a href="/team/NewEvidencePage">Add Evidence</a>
+			
 		</section> 
 
 		

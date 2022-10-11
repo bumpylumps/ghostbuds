@@ -88,12 +88,16 @@ nav li {
   background-color: red;
 }
 
+
 .team-board-container {
   width: 65%;
+  padding: 5%;
+  padding-top: 0;
   margin: 10% auto;
   outline: 1px solid red;
   font-size: .75rem;
 }
+
 
 .team-board-info {
   display: flex;
@@ -286,13 +290,58 @@ button.btn.btn-primary:hover {
 
 
 /* specific location page */
-.specificLocationImage {
-  display: block;
-  width: 25%;
+
+ul.locationInfo {
+  display: flex;
+  flex-direction: column;
 }
 
+section#indent {
+  margin-right: 52%;
+  margin-top: -5%;
+}
 
+section.specific-location-container section {
+  width: fit-content;
+  padding: 2%;
+  margin: 2% auto;
+  font-size: 1.5rem;
+}
+
+form#setLocation {
+  margin: 7% auto;
+  margin-bottom: 0;
+  width: fit-content;
+}
+
+.specificLocationImage {
+  display: block;
+  width: fit-content;
+  max-width: 75%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.specific-location-info-container li {
+  margin-bottom: 3%;
+}
+
+h3#name {
+  font-size: 3rem;
+}
+
+.specific-location-container {
+  width: 65%;
+  padding: 5%;
+  padding-top: 0;
+  margin: 10% auto;
+  outline: 1px solid red;
+  font-size: .75rem;
+  padding-bottom: 1%;
+}
 /* locations page */
+
+
 .locations-list-container {
   width: 80%;
   margin: 5% auto;
@@ -346,6 +395,10 @@ button.voterButton:hover {
 button.voterButton:active{
   background:blue;
 }
+
+
+
+
 /* Calendar page */
 
 table {
@@ -406,7 +459,8 @@ section.month-label {
 /* team pages */
 
 .evidence-image {
-  width: 30%;
+  width: fit-content;
+  max-width: 100%;
   height: auto;
 }
 
@@ -420,6 +474,18 @@ section.month-label {
 .evidence-banner a {
   font-size: 1.5rem;
 }
+
+.evidence-list li {
+  width: fit-content;
+  max-width: 80%;
+  margin: 2% auto;
+}
+
+.evidence-list p {
+  font-size: 1.75rem;
+  width: fit-content;
+}
+
 
 section.evidence-form-interior {
   display: flex;
@@ -446,4 +512,24 @@ section.evidence-form-interior {
 .evidence-header-container h2 {
   width: fit-content;
   margin: 0 auto;
+}
+
+
+/* signup page */
+
+.signup-form {
+  background-color: rgba(54,54,57,.75);
+  padding: 5%;
+}
+
+.signup-form div {
+  background-color: rgba(54,54,57,.05);
+}
+
+.signup-form label {
+  background-color: rgba(54,54,57,.05);
+}
+
+.signup-form button{
+  margin: 2% auto;
 }
