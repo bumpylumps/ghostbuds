@@ -398,22 +398,16 @@ section.month-label {
   margin: 2%;
 }
 
-
-<<<<<<< HEAD
 .schedule-button {
   margin: 0 auto;
   margin-top: 15%;
   width: fit-content;
 }
-
-=======
->>>>>>> 4b42478196c9c2727df1596b3d54df5654352089
 /* team pages */
 
 .evidence-image {
   width: 30%;
   height: auto;
-<<<<<<< HEAD
 }
 
 .evidence-banner {
@@ -452,6 +446,4 @@ section.evidence-form-interior {
 .evidence-header-container h2 {
   width: fit-content;
   margin: 0 auto;
-=======
->>>>>>> 4b42478196c9c2727df1596b3d54df5654352089
 }

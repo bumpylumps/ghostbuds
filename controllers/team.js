@@ -11,7 +11,11 @@ module.exports = {
             const investigation = await Investigation.findOne({user : req.user.userName})
             const location = await Location.find({ name: investigation.location })
 <<<<<<< HEAD
+<<<<<<< HEAD
             const evidenceFiles = await Evidence.find({ user: req.user.id })
+=======
+            const evidenceFiles = await Evidence.find({})
+>>>>>>> 4b42478196c9c2727df1596b3d54df5654352089
 =======
             const evidenceFiles = await Evidence.find({})
 >>>>>>> 4b42478196c9c2727df1596b3d54df5654352089
