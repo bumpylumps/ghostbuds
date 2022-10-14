@@ -206,6 +206,7 @@ form#location-form {
 
 footer {
   width: 100%;
+  padding: 0 4%;
   display: flex;
   justify-content: space-around;
   margin: 0% auto;
@@ -246,6 +247,7 @@ nav a:hover {
   width: fit-content;
   margin: 8% auto;
   padding: 5%;
+  max-width: 90%;
   background-color: rgba(54,54,57,.75);
 }
 
@@ -263,7 +265,7 @@ nav a:hover {
 main.container {
   display: flex;
   margin: 6% auto;
-  width: 50%;
+  width: fit-content;
   flex-direction: column;
 }
 
@@ -394,6 +396,7 @@ h3#name {
 
 p.red {
   background-color: rgba(0,0,0,0);
+  max-width: 20%;
 }
 
 
@@ -523,6 +526,10 @@ section.evidence-form-interior {
   background-color: rgba(57,57,54, 0);
 }
 
+textarea#notes {
+  max-width: 90%;
+}
+
 .evidence-header-container h2 {
   width: fit-content;
   margin: 0 auto;
@@ -547,3 +554,120 @@ section.evidence-form-interior {
 .signup-form button{
   margin: 2% auto;
 }
+
+
+/* mobile layouts */
+@media screen and (max-width: 400px) {
+
+  /* login */
+  .login {
+    width: 90%;
+  }
+
+  /* signup */
+
+  .signup {
+    width: 90%;
+  }
+
+  /* header */
+  nav ul {
+    font-size: .75rem;
+    justify-content: space-around;
+  }
+
+  /* home */
+
+  /* about */
+
+  /* locations */
+
+  .locations-list {
+    width: 100%;
+    margin: 5% auto;
+    padding: 0;
+  }
+
+  .locations-list-item {
+    justify-content: space-around;
+}
+
+  p.red.mobileOut {
+    display: none;
+}
+
+/* spec location */
+
+ul.locationInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.specific-location-container {
+  width: 90%;
+}
+
+.specific-location-info-container li {
+  margin-bottom: 6%;
+}
+
+h3#name {
+  font-size: 3rem;
+  text-align: center;
+}
+
+section.specific-location-container section {
+
+  font-size: 1rem;
+}
+
+.specificLocationImage {
+  max-width: 90%;
+}
+
+  /* addLocation */
+
+  /* schedule */
+
+  /* team */
+
+.team-board-container {
+  width: 95%;
+}
+
+.team-board-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.team-board-info img {
+  width: fit-content;
+  max-width: 80%;
+  margin: 5% auto;
+}
+
+.evidence-banner a {
+  font-size: 1rem;
+}
+
+.evidence-list p {
+    font-size: 1rem;
+    width: fit-content;
+}
+
+.evidence-banner {
+  justify-content: space-between;
+}
+
+  /* footer */
+  footer p {
+    padding: 0 3%;
+  }
+
+
+/* add evidence page */
+}
+
+
+

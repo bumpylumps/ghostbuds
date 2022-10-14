@@ -25,7 +25,8 @@
 
 			<ul class="evidence-list">
 				<% evidenceFiles.forEach(evidence => { %>
-					<li><p><%= evidence.notes %></p>
+					<li><p><%- evidence.location ? evidence.location : "" %></p>
+						<p><%= evidence.notes %></p>
 						<img 
 							src=<%= evidence.image %>
 							class="evidence-image"  />
