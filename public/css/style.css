@@ -649,7 +649,7 @@ section.specific-location-container section {
 .team-board-info img {
   width: fit-content;
   max-width: 80%;
-  max-height: 500px;
+  max-height: 300px;
   margin: 5% auto;
 }
 
