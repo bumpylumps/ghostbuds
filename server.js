@@ -7,6 +7,7 @@ const session = require("express-session")
 const MongoStore = require("connect-mongo")(session);
 const flash = require("express-flash");
 const logger = require("morgan")
+const methodOverride = require("method-override");
 const connectDB = require("./database");
 
 //import required routes
@@ -57,6 +58,8 @@ app.use(passport.session());
 //Use flash messages for errors, info, etc...
 app.use(flash());
 
+//Use forms for put / delete
+app.use(methodOverride("_method"));
 
 //setup listening routes
 app.use('/', mainRoutes)
