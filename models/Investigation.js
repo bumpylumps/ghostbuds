@@ -14,6 +14,9 @@ const InvestigationSchema = new mongoose.Schema({
         type: String,
         required: false
     },
+    timeZone: {
+        type: String
+    },
     date: {
         type: String,
         required: false
