@@ -657,6 +657,16 @@ section.specific-location-container section {
     flex-direction: column;
     align-items: center;
 }
+.location-form-container {
+  width: fit-content;
+  max-width: 80%;
+  margin: 5% auto;
+  display: flex;
+  align-items: center;
+  padding: 2%;
+  background-color: rgba(54,54,57, .75);
+  justify-content: space-evenly;
+}
 
 textarea#story {
   max-width: 100%;
@@ -725,7 +735,30 @@ textarea#story {
 
 form#evidence-form {
   max-width: 95%;
-  margin: 0 auto;
+  margin: 5% auto;
+}
+
+#evidenceDiv {
+  margin: 3%;
+  width: max-content;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(54,54,57, .05);
+}
+
+section.evidence-form-interior {
+  display: flex;
+  max-width: 80%;
+  width: fit-content;
+  padding: 2%;
+  margin: 2% auto;
+  background-color: rgba(57,57,54,.75);
+  flex-direction: column;
+}
+
+input#imageUpload {
+  max-width: 90%;
 }
 
 #location-submit-button {
@@ -734,6 +767,10 @@ form#evidence-form {
   color: white;
   margin: 2% auto;
   margin-bottom: 10%;
+}
+
+textarea#notes {
+  max-width: 70%;
 }
 
   /* footer */
