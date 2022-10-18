@@ -611,6 +611,12 @@ textarea#notes {
     display: none;
 }
 
+p.red {
+  background-color: rgba(0,0,0,0);
+  max-width: 37%;
+  padding-right: 2%;
+}
+
 /* spec location */
 
 ul.locationInfo {
