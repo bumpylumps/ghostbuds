@@ -198,9 +198,9 @@ form#location-form {
 }
 
 #location-submit-button {
-  width: 20%;
+  width: fit-content;
   background-color: red;
-  color: black;
+  color: white;
   margin: 2% auto;
 }
 
@@ -395,8 +395,9 @@ h3#name {
 
 
 p.red {
-  background-color: rgba(0,0,0,0);
-  max-width: 20%;
+    background-color: rgba(0,0,0,0);
+    max-width: 30%;
+    padding-right: 2%;
 }
 
 
@@ -579,7 +580,21 @@ textarea#notes {
   /* home */
 
   /* about */
+  .about-container {
+    width: 80%;
+    padding: 5%;
+    padding-top: 2%;
+    margin: 10% auto;
+    outline: 1px solid red;
+    font-size: 1rem;
+}
 
+.aboutImage {
+  display: block;
+  width: fit-content;
+  max-width: 80%;
+  margin: 0 auto;
+}
   /* locations */
 
   .locations-list {
@@ -632,7 +647,36 @@ section.specific-location-container section {
 }
 
   /* addLocation */
+  form#location-form {
+    flex-direction: column;
+    align-items: center;
+}
 
+textarea#story {
+  max-width: 100%;
+}
+
+.location-form-interior {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: auto;
+}
+
+.location-header-container h2 {
+  width: fit-content;
+  margin: 0% 11%;
+  font-size: 3rem;
+}
+
+#locationButton {
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  width: fit-content;
+  background-color: red;
+  border: none;
+}
   /* schedule */
 
   /* team */
@@ -664,6 +708,26 @@ section.specific-location-container section {
 
 .evidence-banner {
   justify-content: space-between;
+}
+
+
+.evidence-header-container h2 {
+  width: fit-content;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
+form#evidence-form {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+#location-submit-button {
+  width: fit-content;
+  background-color: red;
+  color: white;
+  margin: 2% auto;
+  margin-bottom: 10%;
 }
 
   /* footer */
