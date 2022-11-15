@@ -10,6 +10,16 @@ module.exports = {
             let time = await req.body.time
             let date = await req.body.date
             let timeZone = await req.body.timeZone
+
+            //split date into array
+            date = date.split('-')
+            //destructure array into [day, month, year]
+            let [year, month, day] = date;
+            [year, month, day] = [month, day, year]
+            //join back into string with "-" 
+            date = [year, month, day].join('/')
+
+
             await Investigation.findOneAndUpdate({user: req.user.userName},
             {
               $set: { "leader": `${leader}`,
