@@ -1,7 +1,7 @@
 # **GhostBuds** 
 A private platform for organizing paranormal investigations
 
-**Link to project:** https://ghostbuds.herokuapp.com/
+**Link to project:** https://ghostbuds.cyclic.app/
 
 ![ghost](ghostBudsLandingPic.JPG)
 
