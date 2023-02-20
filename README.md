@@ -39,9 +39,9 @@ it!
 ## Examples:
 Here's a few links to check out: 
 
-**Specific Location** https://ghostbuds.herokuapp.com/locations/specificLocation/63420b72860313080c7f474e
+**[Specific Location](https://ghostbuds.herokuapp.com/locations/specificLocation/63420b72860313080c7f474e)** 
 
-**About Page** https://ghostbuds.herokuapp.com/about
+**[About Page](https://ghostbuds.herokuapp.com/about)** 
 
 
 
