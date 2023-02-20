@@ -7,7 +7,7 @@ A private platform for organizing paranormal investigations
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, Bootstrap, JavaScript, Express, MongoDB, Mongoose, Passport, EJS, [Cloudinary]: https://cloudinary.com/
+**Tech used:** HTML, CSS, Bootstrap, JavaScript, Express, MongoDB, Mongoose, Passport, EJS, [Cloudinary](https://cloudinary.com/)
 
 I built this app to help budding paranormal investigators organize investigations and store their evidence. It utilizes a host of technologies to 
 keep that evidence secure with user authentication, and also hosts a list of locations for people to explore. It also allows users to add their own locations, 
