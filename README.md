@@ -1,17 +1,17 @@
 # **GhostBuds** 
 A private platform for organizing paranormal investigations
 
-**Link to project:** https://ghostbuds.herokuapp.com/
+**Link to project:** https://ghostbuds.cyclic.app/
 
 ![ghost](ghostBudsLandingPic.JPG)
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, Bootstrap, JavaScript, Express, MongoDB, Mongoose, Passport, EJS, Cloudinary
+**Tech used:** HTML, CSS, Bootstrap, JavaScript, Express, MongoDB, Mongoose, Passport, EJS, [Cloudinary](https://cloudinary.com/)
 
 I built this app to help budding paranormal investigators organize investigations and store their evidence. It utilizes a host of technologies to 
 keep that evidence secure with user authentication, and also hosts a list of locations for people to explore. It also allows users to add their own locations, 
-and follows MVC organization. Most of the code is backend and utilizes Passport for authentication, Cloudinary to store images, and MongoDB/Mongoose to store User info, locations, and evidence notes. I also set up base styles with Bootstrap, and customized what I needed in order to maintain my own style/theme. For now, the locations list is public in order to help people who are interested in investigating the paranormal find places to 
+and follows MVC organization. Most of the code is backend and utilizes Passport for authentication, [Cloudinary](https://cloudinary.com/) to store images, and MongoDB/Mongoose to store User info, locations, and evidence notes. I also set up base styles with Bootstrap, and customized what I needed in order to maintain my own style/theme. For now, the locations list is public in order to help people who are interested in investigating the paranormal find places to 
 start with. 
 
 **This app allows users to :
@@ -39,9 +39,9 @@ it!
 ## Examples:
 Here's a few links to check out: 
 
-**Specific Location** https://ghostbuds.herokuapp.com/locations/specificLocation/63420b72860313080c7f474e
+**[Specific Location](https://ghostbuds.herokuapp.com/locations/specificLocation/63420b72860313080c7f474e)** 
 
-**About Page** https://ghostbuds.herokuapp.com/about
+**[About Page](https://ghostbuds.herokuapp.com/about)** 
 
 
 
