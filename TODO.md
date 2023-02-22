@@ -67,7 +67,7 @@
 
 * style pages:
     - addLocation
-        - figure out form styling
+    x - figure out form styling
 
 *  x - build by MVC standards
 

@@ -11,12 +11,11 @@ module.exports = {
             let date = await req.body.date
             let timeZone = await req.body.timeZone
 
-            //split date into array
-            date = date.split('-')
-            //destructure array into [day, month, year]
+            
+            //date formatting
+            date = date.split('-');
             let [year, month, day] = date;
-            [year, month, day] = [month, day, year]
-            //join back into string with "-" 
+            [year, month, day] = [month, day, year];
             date = [year, month, day].join('/')
 
 
