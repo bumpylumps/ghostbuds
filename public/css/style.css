@@ -39,7 +39,7 @@ body {
 
 
 
-.team-board-container h2 {
+.investigation-board-container h2 {
   width: 100%;
   padding: 5% 0;
   color: white;
@@ -88,33 +88,107 @@ nav li {
   background-color: red;
 }
 
+/*team page */
+
+.team-investigation-dashboard {
+  display: flex;
+}
+
+.user-team-board-container {
+  margin: 0% auto;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.user-board-container {
+  height: fit-content; 
+  padding: 5%;
+  margin-bottom: 5%;
+  outline: 1px solid red;
+  font-size: .75rem;
+}
+
+.user-board-container h4{
+  width: fit-content;
+  padding: 2%;
+  margin: 1%;
+}
+
+
 
 .team-board-container {
-  width: 65%;
+  height: fit-content; 
+  min-height: 600px;
   padding: 5%;
-  padding-top: 0;
-  margin: 10% auto;
+  margin: 5% 0%;
   outline: 1px solid red;
   font-size: .75rem;
 }
 
 
-.team-board-info {
+.team-board-container li, .team-board-container h3{
+  width: fit-content;
+  padding: 2%;
+  margin: 1%;
+}
+
+
+.investigation-board-container {
+  width: 60%;
+  padding: 2%;
+  padding-top: 0;
+  margin: 2% auto;
+  margin-top: 0%;
+  outline: 1px solid red;
+  font-size: .75rem;
+}
+
+
+.investigation-board-info {
   display: flex;
 }
 
 
-.team-board-info img {
+
+#locationImg{
+  width: 50%;
+}
+
+#locationTitle{
+  width: 100%;
+  margin: 0 10%;
+  font-size: 2.5rem;
+}
+
+
+#ledBy {
+  width: 80%;
+  margin: 5% 92%;
+}
+
+
+#longLat {
+  max-width: 80%;
+}
+
+.investigation-board-info img {
   outline: 2px solid white;
-  width: 30%;
+  width: 90%;
   height: fit-content;
   margin: 5%;
 }
 
-.team-board-info ul {
-  margin: 5% 0%;
-  padding: 2% 2%;
+.investigation-board-info ul {
+  display: inline-flex;
+  width: 100%;
+  padding: 2% 0%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
 }
+
 
 
 /*add a location page*/
@@ -233,11 +307,12 @@ nav a:hover {
   cursor: pointer;
 }
 
-.team-board-info p {
+.investigation-board-info p {
   color: white;
   width: fit-content;
-  margin: 5%;
-  font-size: 1rem;
+  max-width: 80%;
+  margin: 5% 0%;
+  font-size: 1.5rem;
 }
 
 /*============================================================================================*/
@@ -476,6 +551,12 @@ section.month-label {
 }
 /* team pages */
 
+.evidence-container {
+  width: 95%;
+  margin-top: 10%;
+}
+
+
 .evidence-image {
   width: fit-content;
   max-width: 100%;
@@ -697,16 +778,16 @@ textarea#story {
 
   /* team */
 
-.team-board-container {
+.investigation-board-container {
   width: 95%;
 }
 
-.team-board-info {
+.investigation-board-info {
   display: flex;
   flex-direction: column;
 }
 
-.team-board-info img {
+.investigation-board-info img {
   width: fit-content;
   max-width: 80%;
   max-height: 300px;

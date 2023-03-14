@@ -1,23 +1,50 @@
 <%- include('partials/header') -%>
 		
-		<section class="team-board-container">
-			<h2><%= user.userName %>'s Next Investigation</h2>
-			<section class="team-board-info">
-				<img 
-					src= <%- location.image ? location.image : "/location.jpg" %>
-					>
+		
+	<section class="team-investigation-dashboard">	
+		<section class="user-team-board-container">
+			<section class="user-board-container">
+				<h3>Name: <%= user.userName %></h4>
+				<h4>Interests: ?interests</h4>
+				<h4>Last Investigation: ?last date</h4>
+				<h4>Bio: ?bio</h4>
+			</section>
+			<section class="team-board-container">
+				<h3>Team: Bumpy</h3>
+			<ul>
+				<li><h4>Members:</h4></li>
+				<li><h5>Bob, Mary, Andre, Sarah</h5></li>
+			</ul>
+			<ul>
+				<li><h4>Past Investigations:</h4></li>
+				<li><h5>Waverly Hills</h5></li>
+				<li><h5>Trudeau Sanitorium</h5></li>
+				<li><h5>Strand Theater</h5></li>
+			</ul>
+			</section>	
+		</section>
+
+	
+	
+
+		<section class="investigation-board-container">
+			<section class="investigation-board-info">
 				<ul>
+					<li id="locationImg"><img src= <%- location.image ? location.image : "/location.jpg" %>></li>
+					<li><h3 id="locationTitle"><%= investigation.location %></h3></li>
 					<li><p><strong>Scheduled for:</strong> <%= investigation.date %>, at: <%= investigation.time%></p></li>
-					<li><p><strong>Led by: </strong> <%= investigation.leader %></p></li>
-					<li><p><strong>Location: </strong> <%= investigation.location %></p></li>
-					<li><p><strong>Long,Lat: </strong> <%- location ?  location.latitude + " , " + location.longitude : "" %></p></li>
+					<li><p id="ledBy"><strong>Led by: </strong> <%= investigation.leader %></p></li>
+					<li><p id="longLat"><strong>Long,Lat: </strong> <%- location ?  location.latitude + " , " + location.longitude : "" %></p></li>
 					<li><p><strong>Area: </strong> <%- investigation.location ? location.townOrCity + ", " + location.state : "" %></p></li>
 					<li><p><strong>Location Story: </strong><%- location ? location.story : "" %></p></li>
 				</ul>
-			</section>
+				
+			</section>	
 		</section>
+	</section>
 
-		<section class="evidence-container team-board-container">
+
+		<section class="evidence-container investigation-board-container">
 			<section class="evidence-banner">
 				<h3>Evidence Area</h3>
 				<a href="/team/NewEvidencePage">Add Evidence</a>
