@@ -551,11 +551,31 @@ section.month-label {
 }
 /* team pages */
 
-.evidence-container {
-  width: 95%;
+.evidence-chat-container {
+  display: flex;
+}
+
+.chat-space {
+  height: fit-content;
+  width: 30%;
+}
+
+.chat-log p{
+  font-size: 1.5rem;
+  background-color: #272727;
+  width: 94%;
+  height: 165px;
   margin-top: 10%;
 }
 
+.chat-space input {
+  font-size: 1.15rem;
+  height: 42px;
+}
+
+.chat-space button {
+  font-size: 1.5rem;
+}
 
 .evidence-image {
   width: fit-content;

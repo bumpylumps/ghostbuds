@@ -44,12 +44,23 @@
 	</section>
 
 
-		<section class="evidence-container investigation-board-container">
+
+
+	<section class="evidence-chat-container">
+		<section class="chat-space investigation-board-container">
+			<section class="chat-log">
+				<p>lorem ipsum</p>
+			</section>
+			<form>
+				<input type="text" />
+				<button>Chat</button>
+			</form>
+		</section>
+		<section class="investigation-board-container evidence-container">
 			<section class="evidence-banner">
 				<h3>Evidence Area</h3>
 				<a href="/team/NewEvidencePage">Add Evidence</a>
 			</section>
-
 			<ul class="evidence-list">
 				<% evidenceFiles.forEach(evidence => { %>
 					<li><p><%- evidence.location ? evidence.location : "" %></p>
@@ -60,8 +71,9 @@
 					</li>
 				<% }) %>
 			</ul> 
-			
-		</section> 
+		</section>
+		
+	</section> 
 
 		
 
