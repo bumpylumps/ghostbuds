@@ -1,0 +1,8 @@
+.map_search_main {
+    display: flex;
+    flex-direction: row;
+    height: 768px;
+    margin: 0% 1%;
+    margin-top: 3%;
+}
+
