@@ -9,8 +9,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <div className={homeStylez.card}>
-      <img src="./ghrost.jpg" />
+    <div className={homeStylez.card} >
+      <section className={homeStylez.ghostCard}><img src="./ghrost.jpg" /></section>
     <section className={homeStylez.card}>
       <p>One Time in the middle of the night I heard a strange 
         noise in the woods. I went outside of the house and started heading 

@@ -2,10 +2,20 @@
 
 * You are here:
     - map has been hooked up
+    - calendar is added, needs styling and behavior
 
 
 * New Views: 
     - use designs from bookmark ghostbuds folder
+
+
+* Schedule page: 
+    - fix calendar display
+    - ability to add investigation events
+        - click a date
+        - pick a location
+        - add to log (sidebar)
+
 
 * Locations page:
     - add markers for locations

@@ -1,0 +1,6 @@
+.calendar {
+    width: 80%;
+    height: 700px;
+    flex: 1 1 auto;
+    margin: 2% auto;
+}
