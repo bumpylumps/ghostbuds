@@ -1,6 +1,3 @@
-console.log('hello commit test');
-
-
 function createCalendar(elem, year, month) {
   
     //months in js are 0...11
